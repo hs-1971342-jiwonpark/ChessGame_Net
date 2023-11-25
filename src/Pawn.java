@@ -5,7 +5,7 @@ public class Pawn extends ChessPiece {
     private ChessPane chessPane;
 
     Pawn(Cor cor, ChessPane chessPane) {
-        this.name = "Pawn";
+        this.name = "pawn";
         this.color = cor;
         this.pieceImg = new ImageIcon(this.color+"_"+this.name+".png");
         this.chessPane = chessPane;

@@ -58,7 +58,6 @@ public class Square extends JLabel implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         if (!(this.getBackground().equals(Color.CYAN))) {
-            System.out.println("d");
             // 폰의 이동 처리 부분
             if ("black_pawn".equals(pieceType)) {
                 int newY = this.y + 1; // 흑색 폰은 아래로 이동
