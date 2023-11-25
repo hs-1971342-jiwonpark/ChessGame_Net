@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ChessPane extends JLayeredPane {
     public static final int DIMENSION = 8;
-    private static Square[][] grid = new Square[DIMENSION][DIMENSION];
+    public static Square[][] grid = new Square[DIMENSION][DIMENSION];
     private ArrayList<Square[][]> turn = new ArrayList<>();
     private static ChessPane boardInstance = new ChessPane();
     private ImageIcon pick_ps;
@@ -32,8 +32,8 @@ public class ChessPane extends JLayeredPane {
     }
 
 
-    public void setSquareAt(int row, int col, ImageIcon imgcon) {
-        grid[row][col].setImage(imgcon);
+    public void setSquareAt(int row, int col, ImageIcon imgcon, String pt) {
+        grid[row][col].setImage(imgcon, pt);
     }
     public void setPos(int row, int col,Color cor) {
         grid[row][col].setBackground(cor);
@@ -42,7 +42,6 @@ public class ChessPane extends JLayeredPane {
         for (int i = 0; i < DIMENSION; i++) {
             for (int j = 0; j < DIMENSION; j++) {
                 grid[i][j] = new Square(i, j,this);
-                grid[i][j].addMouseListener(grid[i][j]);
                 initBG(j,i);
                 grid[i][j].setVisible(true);
             }

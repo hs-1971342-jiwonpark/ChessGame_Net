@@ -13,17 +13,14 @@ public class King extends ChessPiece {
     protected void initPos(Cor cor) {
         switch (cor) {
             case white:
-                chessPane.setSquareAt(7, 3, pieceImg);
+                chessPane.setSquareAt(7, 3, pieceImg,this.color+"_"+this.name);
                 break;
             case black:
-                chessPane.setSquareAt(0, 3, pieceImg);
+                chessPane.setSquareAt(0, 3, pieceImg,this.color+"_"+this.name);
                 break;
         }
 
     }
-
-
-
     @Override
     protected void Move(JPanel chessPan) {
 

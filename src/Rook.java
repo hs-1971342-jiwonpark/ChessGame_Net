@@ -13,12 +13,12 @@ public class Rook extends ChessPiece {
     protected void initPos(Cor cor) {
         switch (cor) {
             case white:
-                chessPane.setSquareAt(7, 0, pieceImg);
-                chessPane.setSquareAt(7, 7, pieceImg);
+                chessPane.setSquareAt(7, 0, pieceImg,this.color+"_"+this.name);
+                chessPane.setSquareAt(7, 7, pieceImg,this.color+"_"+this.name);
                 break;
             case black:
-                chessPane.setSquareAt(0, 0, pieceImg);
-                chessPane.setSquareAt(0, 7, pieceImg);
+                chessPane.setSquareAt(0, 0, pieceImg,this.color+"_"+this.name);
+                chessPane.setSquareAt(0, 7, pieceImg,this.color+"_"+this.name);
                 break;
         }
 

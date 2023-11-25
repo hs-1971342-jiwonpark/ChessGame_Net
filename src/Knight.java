@@ -13,12 +13,12 @@ public class Knight extends ChessPiece {
     protected void initPos(Cor cor) {
         switch (cor) {
             case white:
-                chessPane.setSquareAt(7, 1, pieceImg);
-                chessPane.setSquareAt(7, 6, pieceImg);
+                chessPane.setSquareAt(7, 1, pieceImg,this.color+"_"+this.name);
+                chessPane.setSquareAt(7, 6, pieceImg,this.color+"_"+this.name);
                 break;
             case black:
-                chessPane.setSquareAt(0, 1, pieceImg);
-                chessPane.setSquareAt(0, 6, pieceImg);
+                chessPane.setSquareAt(0, 1, pieceImg,this.color+"_"+this.name);
+                chessPane.setSquareAt(0, 6, pieceImg,this.color+"_"+this.name);
                 break;
         }
 

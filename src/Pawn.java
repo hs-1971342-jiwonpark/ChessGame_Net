@@ -13,13 +13,13 @@ public class Pawn extends ChessPiece {
     protected void initPos(Cor cor) {
         switch (cor) {
             case white:for(int i=0;i<8;i++) {
-                chessPane.setSquareAt(6, i, pieceImg);
+                chessPane.setSquareAt(6, i, pieceImg,this.color+"_"+this.name);
             }
                 break;
             case black:
 
                 for(int i=0;i<8;i++) {
-                    chessPane.setSquareAt(1, i, pieceImg);
+                    chessPane.setSquareAt(1, i, pieceImg,this.color+"_"+this.name);
                 }
                 break;
         }

@@ -13,12 +13,12 @@ public class Bishop extends ChessPiece {
     protected void initPos(Cor cor) {
         switch (cor) {
             case white:
-                chessPane.setSquareAt(7, 2, pieceImg);
-                chessPane.setSquareAt(7, 5, pieceImg);
+                chessPane.setSquareAt(7, 2, pieceImg,this.color+"_"+this.name);
+                chessPane.setSquareAt(7, 5, pieceImg,this.color+"_"+this.name);
                 break;
             case black:
-                chessPane.setSquareAt(0, 2, pieceImg);
-                chessPane.setSquareAt(0, 5, pieceImg);
+                chessPane.setSquareAt(0, 2, pieceImg,this.color+"_"+this.name);
+                chessPane.setSquareAt(0, 5, pieceImg,this.color+"_"+this.name);
                 break;
         }
 

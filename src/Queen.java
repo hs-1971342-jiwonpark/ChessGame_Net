@@ -13,10 +13,10 @@ public class Queen extends ChessPiece {
     protected void initPos(Cor cor) {
         switch (cor) {
             case white:
-                chessPane.setSquareAt(7, 4, pieceImg);
+                chessPane.setSquareAt(7, 4, pieceImg,this.color+"_"+this.name);
                 break;
             case black:
-                chessPane.setSquareAt(0, 4, pieceImg);
+                chessPane.setSquareAt(0, 4, pieceImg,this.color+"_"+this.name);
                 break;
         }
 
